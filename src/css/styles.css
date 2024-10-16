@@ -1,0 +1,22 @@
+
+@import "header.css";
+
+main{
+    height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    background-image: url("/src/assets/images/background-pokemon-field.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper-content{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
