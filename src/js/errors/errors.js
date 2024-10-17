@@ -1,4 +1,4 @@
-function showError(message) {
+export default function showError(message) {
     // Seleciona o alerta e injeta a mensagem
     const alertDiv = document.getElementById('error-alert');
     alertDiv.classList.remove('d-none');  // Remove a classe 'd-none' para exibir o alerta
