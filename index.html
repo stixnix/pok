@@ -16,16 +16,31 @@
 </head>
 
 <body>
-
+    <div id="pokemon-modal" class="modal-overlay d-none">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Os detalhes do Pokémon serão carregados aqui -->
+            </div>
+        </div>
+    </div>
+    
     <header class="header-content">
         <img class="header-logo"  src="src/assets/images/pokemon-title.svg" alt="Logo Pokemon">
     </header>
     
     <main>
-        <div class="wrapper-content" id="pokemon-list">
-
+        <!-- Barra de pesquisa para buscar um Pokémon -->
+        <div class="container mt-4 text-center search-container">
+            <input type="text" id="pokemon-search" class="form-control d-inline-block w-50" placeholder="Digite o nome ou número do Pokémon">
+            <button id="search-button" class="btn btn-primary mt-2">Buscar</button>
+        </div>
+    
+        <div class="wrapper-content mt-4" id="pokemon-list">
+            <!-- Aqui são carregados os cards dos Pokémon -->
         </div>
     </main>
+    
 
     <div id="error-alert" class="alert alert-danger d-none position-fixed bottom-0 start-50 translate-middle-x" role="alert">
         <!-- Aqui a mensagem de erro será exibida -->
